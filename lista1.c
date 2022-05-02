@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
+#include <math.h>
 
 int exercicio_dois(int n){
 
@@ -19,7 +20,7 @@ int exercicio_tres(int ano){
 
     int idade = ano_atual - ano;
 
-    printf("sua idade é %d", idade);
+    printf("sua idade ï¿½ %d", idade);
 
     return 1;
 
@@ -47,19 +48,97 @@ int exercicio_cinco(int a, int b, int c){
 
  }
 
+ int exercicio_seis_a(int a, int b){
 
+    int x = a - b;
 
-int main(){
-
-    int valor;
-    printf("Qual e o valor para o exercicio? ");
-
-    scanf("%f", &valor);
-
-    exercicio_cinco(valor);
-
+    printf("%d", x * x);
 
     return 1;
 
 
-}
+ }
+
+ int exercicio_seis_b(int a, int b, int c, int n){
+
+    int x = pow(a-b, 2);
+
+    int z = pow(c-n, 2);
+
+    printf("%d", x - z);
+
+    return 1;
+
+
+ }
+
+ int exercicio_seis_c(int a, int b, int c){
+
+    int z = (b*b) -4 * a * c;
+
+    printf("%d", z);
+
+    return 1;
+
+ }
+
+ void exercicio_seis_d(int a){
+
+    int z = pow(a, 1/3.);
+
+    printf("%d", z);
+
+
+ }
+
+void exercicio_seis_e(int a, int b,int c){
+
+    int baskara = exercicio_seis_c(a, b, c);
+
+    int raiz = pow(baskara, 1/2.);
+
+    printf("%d", raiz);
+
+ }
+
+ int exercicio_seis_f(int c){
+
+    printf("%d", c * c);
+
+    return 1;
+
+ }
+
+ void exercicio_seis_g(int a){
+
+    int z = ((a * a) * sqrt(3))/4;
+
+    printf("%d", z);
+
+
+ }
+
+ void exercicio_seis_h(int a, int b, int c, int d, int n){
+
+    int r = a - b * (c + n * n)/d;
+
+    printf("%d", r);
+
+
+ }
+
+ void exercicio_seis_i(int a, int b, int c){
+
+    int x = a * pow(b,c);
+
+    printf("%d", x);
+
+
+ }
+void main(){
+
+
+    exercicio_seis_i(3, 4, 2);
+
+
+    return 1;
