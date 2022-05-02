@@ -17,3 +17,30 @@ main(void){
     getch();
 
 }
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+int exercicio_dois_quadro(int a){
+
+    if (a% 2 == 0){
+
+        printf("Par");
+
+    }
+
+    else{
+
+        printf("Impar");
+    }
+
+
+}
+
+int main(){
+
+    exercicio_dois_quadro(8);
+
+
+}
