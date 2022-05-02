@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+main(void){
+
+    // declaração das variáveis
+
+    float raio,a;
+
+    printf("Entre com um raio");
+    scanf("%f", &raio);
+
+    a = (3.14) * pow(raio, 2);
+    printf("\n A area do circulo: %f",a);
+
+    getch();
+
+}
