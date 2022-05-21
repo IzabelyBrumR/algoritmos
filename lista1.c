@@ -135,10 +135,7 @@ void exercicio_seis_e(int a, int b,int c){
 
 
  }
+
 void main(){
-
-
     exercicio_seis_i(3, 4, 2);
-
-
-    return 1;
+}
