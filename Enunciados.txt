@@ -1,0 +1,9 @@
+Enunciado 1: Crie um código que tenha três vetores constantes, sendo que o vetor 3 é definido por i * 2 = vetor 1 
+e dps temos outro vetor 3 que é igual o primeiro porém soma 1; no final exiba o valor do vetor 1, 2 e 3.
+
+Enunciado 2: Crie um código com um vetor no qual o algoritmo vê qula é o maior e o menor valor do vetor por meio
+de uma condição que consta qual é o maior e uma segunda para ver o menor, imprimindo no final o maior valor e sua 
+posição e o menor valor e sua posição.
+
+Enunciado 3: Crie um código no qual tenha um vetor que o usuário define o valor e que descubra quais são os 
+números ímpares e a quantidade de números ímpares. 
