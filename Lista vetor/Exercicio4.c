@@ -4,19 +4,22 @@
 
 main(){
 
-int i, v[3];
+int v[10], i, a[5], b[5];
 
-    for(i=0; i<3; i++){
-
-        printf("Entre com um numero inteiro:\n");
-        scanf("%d", &v[i]);
-
-    }
-    for(i=0; i<3; i++){
-
-    printf("Numeros do vetor:%d\n", v[i]);
-
-    }
-
-
+for(i=0; i<10; i++){
+    printf("Entre com valores inteiros:\n");
+    scanf("%d", &v[i]);
 }
+
+for(i=0; i<10; i++){
+
+    if(v[i]%2==0){
+        printf("Este valor eh par: %d\n", v[i]);
+    }
+
+    else{
+        printf("Este valor eh impar: %d\n", v[i]);
+    }
+}
+}
+
