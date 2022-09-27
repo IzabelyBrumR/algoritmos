@@ -9,11 +9,13 @@ char str[5], str1[5];
 int i, cont=0;
 
     for(i=0; i<5; i++){
-        puts("Entre com o Gabarito da prova:\n");
-        gets(str);
+        printf("Entre com o Gabarito da prova %d:\n", i);
+        scanf("%c", &str[i]);
+        fflush(stdin);
 
-        puts("Entre com a sua resposta:\n");
-        gets(str1);
+        printf("Entre com a sua resposta %d:\n", i);
+        scanf("%c", &str1[i]);
+        fflush(stdin);
     }
 
     for(i=0; i<5; i++){
@@ -26,4 +28,3 @@ int i, cont=0;
 printf("Voce acertou: %d", cont);
 
 }
-
