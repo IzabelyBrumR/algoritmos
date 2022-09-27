@@ -19,14 +19,13 @@ int cont = 0, cont2 = 0, cont3 = 0;
                || str == 'o' || str == 'O' || str == 'u'
                || str == 'U'){
             cont++;
-        } else {
+        } else if(str != 'Z' && str != 'z'){
             cont2++;
         }
         cont3++;
-        printf("%c\n",str);
 
-    } while(str == 'z' || str == 'Z' || cont3 <= 10);
+    } while(str != 'z' && str != 'Z' && cont3 < 10);
 
-    printf("O numero de vogais: %d", cont);
+    printf("O numero de vogais: %d\n", cont);
     printf("O numero de consoantes: %d", cont2);
 }
