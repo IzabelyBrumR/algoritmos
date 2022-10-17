@@ -1,30 +1,37 @@
 #include <conio.h>
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 #include <string.h>
 
 main(){
 
-int I, i, cont;
-char c, str[20];
+char str[5][5];
+int i, v[5], menor=100000000, maior=0, litros=0;
 
-    printf("Entre com uma string\n");
-    gets(str);
+    for(i=0; i<5; i++){
 
-    printf("Entre com um caractere\n");
-    scanf("\n%c", &c);
-    fflush(stdin);
+        fflush(stdin);
+        printf("\nEntre com um carro\n");
+        gets(str);
 
-    printf("Entre com uma posicao\n");
-    scanf("%d", &I);
+        printf("\nEntre com o consumo de combustivel\n");
+        scanf("%d", &v[i]);
 
-    for(i= I; i<20; i++){
-        if(str[i] == c){
+        if(v[i] < menor){
 
-            printf("A letra %c foi encontrada na posicao %d", c, i+1);
-            
-        break;
+            menor = v[i];
+
         }
+
     }
+    for(i=0; i<5; i++){
+
+        litros = 1000 / v[i];
+
+    }
+
+printf("\nO carro mais economico: %c\n", str);
+printf("\nQuantos litros cada carro utiliza em 1000 quilometros: %d\n", litros);
+
 
 }
