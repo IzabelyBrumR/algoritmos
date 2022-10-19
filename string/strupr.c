@@ -4,7 +4,10 @@
 #include <string.h>
 
 
-// strupr = transforma a letra de minuscula para maiuscula
+// strupr = transforma a string de minuscula para maiuscula
+// strlwr = transforma a string em minuscula
+// toupper = recebe um caracter e transforma em maiusculo
+// tolower = recebe um caracter e transforma em minusculo
 
 //   STRUPR
 
